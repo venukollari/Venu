@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC Training Institute</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-color:#f4f4f4;
+}
+
+/* Navigation Bar */
+
+nav{
+    background:#1d3557;
+    color:white;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:white;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#1d3557;
+}
+
+/* General Sections */
+
+section{
+    padding:50px;
+}
+
+h1,h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Home Section */
+
+#home{
+    background:#dbeafe;
+    text-align:center;
+}
+
+#home p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+#home img{
+    width:80%;
+    max-width:900px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.media{
+    margin-top:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+video{
+    border-radius:10px;
+}
+
+audio{
+    width:320px;
+}
+
+/* Courses */
+
+#courses{
+    background:white;
+}
+
+.course-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.course-box{
+    width:350px;
+}
+
+.course-box h3{
+    color:#1d3557;
+    margin-bottom:15px;
+}
+
+.course-box ul,
+.course-box ol{
+    margin-left:25px;
+}
+
+.course-box li{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Schedule */
+
+#schedule{
+    background:#f8f8f8;
+}
+
+table{
+    width:80%;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+table, th, td{
+    border:1px solid #999;
+}
+
+th{
+    background:#c0392b;
+    color:white;
+}
+
+th, td{
+    padding:15px;
+    text-align:center;
+}
+
+/* Registration Form */
+
+#register{
+    background:#dbeafe;
+}
+
+form{
+    width:60%;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:10px;
+}
+
+.gender{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.gender input{
+    width:auto;
+}
+
+button{
+    background:#c0392b;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#922b21;
+}
+
+/* Footer */
+
+footer{
+    background:#1d3557;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<nav>
+    <h2>ABC Training Institute</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#register">Register</a></li>
+    </ul>
+</nav>
+
+<!-- Home Section -->
+
+<section id="home">
+
+    <h1>Welcome to ABC Training Institute</h1>
+
+    <p>
+        Empowering Your Future with Quality Education
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200"
+         alt="Institute Building">
+
+    <div class="media">
+
+        <video width="500" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+
+</section>
+
+<!-- Courses Section -->
+
+<section id="courses">
+
+    <h2>Our Courses</h2>
+
+    <div class="course-container">
+
+        <div class="course-box">
+            <h3>Web Development</h3>
+
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+            </ul>
+        </div>
+
+        <div class="course-box">
+            <h3>Programming Languages</h3>
+
+            <ol>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ol>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Course Schedule -->
+
+<section id="schedule">
+
+    <h2>Course Schedule</h2>
+
+    <table>
+
+        <tr>
+            <th>Course</th>
+            <th>Trainer</th>
+            <th>Duration</th>
+            <th>Mode</th>
+        </tr>
+
+        <tr>
+            <td>HTML & CSS</td>
+            <td>Ashoka</td>
+            <td>2 Weeks</td>
+            <td>Online</td>
+        </tr>
+
+        <tr>
+            <td>Java</td>
+            <td>Ms. Rahul</td>
+            <td>4 Weeks</td>
+            <td>Offline</td>
+        </tr>
+
+        <tr>
+            <td>React JS</td>
+            <td>Mr. Anita</td>
+            <td>3 Weeks</td>
+            <td>Online</td>
+        </tr>
+
+    </table>
+
+</section>
+
+<!-- Student Registration -->
+
+<section id="register">
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select Course</label>
+
+            <select>
+                <option>HTML & CSS</option>
+                <option>JavaScript</option>
+                <option>React JS</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C++</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Gender</label>
+
+            <div class="gender">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Enter your message"></textarea>
+        </div>
+
+        <center>
+            <button type="submit">Register Now</button>
+        </center>
+
+    </form>
+
+</section>
+
+<footer>
+    © 2026 ABC Training Institute. All Rights Reserved.
+</footer>
+
+</body>
+</html>
